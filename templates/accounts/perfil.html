@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block content %}
+    <h2>Perfil</h2>
+    {% for produto in object_list %}
+        <li>{{ produto.nome }}</li>
+        <li>{{ produto.quantidade }}</li>
+        <li>{{ produto.validade }}</li>
+    {% endfor %}
+{% endblock content %}
